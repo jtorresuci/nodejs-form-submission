@@ -8,7 +8,7 @@ const port = process.env.PORT || 5000;
 const nodemailer = require('nodemailer');
 const bodyParser = require('body-parser');
 
-app.use(cors({ origin: 'https://www.100ninjas.dev' }));
+app.use(cors({ origin: 'http://localhost:3000' }));
 app.use(bodyParser.json());
 
 app.post('/submit', (req, res) => {
